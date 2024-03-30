@@ -5,7 +5,7 @@ events:
     kind: "message-v1"
     backtrace:
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
-      - "D:/Tools/FreeRTOS-KernelV11.0.1/portable/ThirdParty/GCC/RP2040/CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:12 (project)"
     message: |
       The target system is: PICO -  - cortex-m0plus
       The host system is: Windows - 10.0.22621 - AMD64
@@ -15,7 +15,7 @@ events:
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "D:/Tools/FreeRTOS-KernelV11.0.1/portable/ThirdParty/GCC/RP2040/CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:12 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
       Compiler: D:/Tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/arm-none-eabi-gcc.exe 
@@ -35,7 +35,7 @@ events:
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "D:/Tools/FreeRTOS-KernelV11.0.1/portable/ThirdParty/GCC/RP2040/CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:12 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler: D:/Tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/arm-none-eabi-gcc.exe 
@@ -57,7 +57,7 @@ events:
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "D:/Tools/FreeRTOS-KernelV11.0.1/portable/ThirdParty/GCC/RP2040/CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:12 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
       Compiler: D:/Tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/arm-none-eabi-g++.exe 
@@ -77,7 +77,7 @@ events:
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "D:/Tools/FreeRTOS-KernelV11.0.1/portable/ThirdParty/GCC/RP2040/CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:12 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler: D:/Tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/arm-none-eabi-g++.exe 
@@ -94,16 +94,29 @@ events:
         D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/3.28.0-rc4/CompilerIdCXX/CMakeCXXCompilerId.o
       
   -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1131 (message)"
+      - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      arm-none-eabi-gcc.exe (GNU Arm Embedded Toolchain 10.3-2021.10) 10.3.1 20210824 (release)
+      Copyright (C) 2020 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
     kind: "try_compile-v1"
     backtrace:
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "D:/Tools/FreeRTOS-KernelV11.0.1/portable/ThirdParty/GCC/RP2040/CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:12 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-szxagd"
-      binary: "D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-szxagd"
+      source: "D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-x131i8"
+      binary: "D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-x131i8"
     cmakeVariables:
       CMAKE_C_FLAGS: "-mcpu=cortex-m0plus -mthumb"
       CMAKE_C_FLAGS_DEBUG: "-Og -g"
@@ -113,13 +126,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-szxagd'
+        Change Dir: 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-x131i8'
         
-        Run Build Command(s): D:/Tools/vsarm-rpi-pico/cmake/bin/cmake.exe -E env VERBOSE=1 C:/mingw/MinGW/bin/mingw32-make.exe -f Makefile cmTC_329d7/fast
-        C:/mingw/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_329d7.dir\\build.make CMakeFiles/cmTC_329d7.dir/build
-        mingw32-make[1]: Entering directory 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-szxagd'
-        Building C object CMakeFiles/cmTC_329d7.dir/CMakeCCompilerABI.c.obj
-        "D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-gcc.exe"   -mcpu=cortex-m0plus -mthumb    -v -o CMakeFiles\\cmTC_329d7.dir\\CMakeCCompilerABI.c.obj -c D:\\Tools\\vsarm-rpi-pico\\cmake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c
+        Run Build Command(s): D:/Tools/vsarm-rpi-pico/cmake/bin/cmake.exe -E env VERBOSE=1 C:/mingw/MinGW/bin/mingw32-make.exe -f Makefile cmTC_0a23e/fast
+        C:/mingw/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_0a23e.dir\\build.make CMakeFiles/cmTC_0a23e.dir/build
+        mingw32-make[1]: Entering directory 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-x131i8'
+        Building C object CMakeFiles/cmTC_0a23e.dir/CMakeCCompilerABI.c.obj
+        "D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-gcc.exe"   -mcpu=cortex-m0plus -mthumb    -v -o CMakeFiles\\cmTC_0a23e.dir\\CMakeCCompilerABI.c.obj -c D:\\Tools\\vsarm-rpi-pico\\cmake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-gcc.exe
         Target: arm-none-eabi
@@ -127,8 +140,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_329d7.dir\\CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m'
-         d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -imultilib thumb/v6-m/nofp -iprefix d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../arm-none-eabi -D__USES_INITFINI__ D:\\Tools\\vsarm-rpi-pico\\cmake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -auxbase-strip CMakeFiles\\cmTC_329d7.dir\\CMakeCCompilerABI.c.obj -version -o C:\\Users\\aprilito\\AppData\\Local\\Temp\\cckPLOvS.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_0a23e.dir\\CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m'
+         d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -imultilib thumb/v6-m/nofp -iprefix d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../arm-none-eabi -D__USES_INITFINI__ D:\\Tools\\vsarm-rpi-pico\\cmake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -auxbase-strip CMakeFiles\\cmTC_0a23e.dir\\CMakeCCompilerABI.c.obj -version -o C:\\Users\\aprilito\\AppData\\Local\\Temp\\ccBgLXjP.s
         GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
         	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
         
@@ -149,15 +162,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: f3937ce18b4177bfd408ca565336596a
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_329d7.dir\\CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m'
-         d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_329d7.dir\\CMakeCCompilerABI.c.obj C:\\Users\\aprilito\\AppData\\Local\\Temp\\cckPLOvS.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_0a23e.dir\\CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m'
+         d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_0a23e.dir\\CMakeCCompilerABI.c.obj C:\\Users\\aprilito\\AppData\\Local\\Temp\\ccBgLXjP.s
         GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
         COMPILER_PATH=d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib/thumb/v6-m/nofp/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_329d7.dir\\CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m'
-        Linking C executable cmTC_329d7.elf
-        D:\\Tools\\vsarm-rpi-pico\\cmake\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_329d7.dir\\link.txt --verbose=1
-        "D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-gcc.exe" -mcpu=cortex-m0plus -mthumb  -Wl,--build-id=none -nostdlib  -v CMakeFiles/cmTC_329d7.dir/CMakeCCompilerABI.c.obj -o cmTC_329d7.elf 
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_0a23e.dir\\CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m'
+        Linking C executable cmTC_0a23e.elf
+        D:\\Tools\\vsarm-rpi-pico\\cmake\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_0a23e.dir\\link.txt --verbose=1
+        "D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-gcc.exe" -mcpu=cortex-m0plus -mthumb  -Wl,--build-id=none -nostdlib  -v CMakeFiles/cmTC_0a23e.dir/CMakeCCompilerABI.c.obj -o cmTC_0a23e.elf 
         Using built-in specs.
         COLLECT_GCC=D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-gcc.exe
         COLLECT_LTO_WRAPPER=d:/tools/vsarm-rpi-pico/toolchain/10\\ 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe
@@ -168,11 +181,11 @@ events:
         gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
         COMPILER_PATH=d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib/thumb/v6-m/nofp/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_329d7.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m'
-         d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\aprilito\\AppData\\Local\\Temp\\ccmq2IeZ.res --sysroot=d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../arm-none-eabi -X -o cmTC_329d7.elf -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1 -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_329d7.dir/CMakeCCompilerABI.c.obj
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_0a23e.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m'
+         d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\aprilito\\AppData\\Local\\Temp\\ccP7nxdX.res --sysroot=d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../arm-none-eabi -X -o cmTC_0a23e.elf -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1 -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_0a23e.dir/CMakeCCompilerABI.c.obj
         d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00008000
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_329d7.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m'
-        mingw32-make[1]: Leaving directory 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-szxagd'
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_0a23e.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m'
+        mingw32-make[1]: Leaving directory 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-x131i8'
         
       exitCode: 0
   -
@@ -180,7 +193,7 @@ events:
     backtrace:
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "D:/Tools/FreeRTOS-KernelV11.0.1/portable/ThirdParty/GCC/RP2040/CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:12 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
         found start of include info
@@ -200,17 +213,17 @@ events:
     backtrace:
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "D:/Tools/FreeRTOS-KernelV11.0.1/portable/ThirdParty/GCC/RP2040/CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:12 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(arm-none-eabi-ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-szxagd']
+        ignore line: [Change Dir: 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-x131i8']
         ignore line: []
-        ignore line: [Run Build Command(s): D:/Tools/vsarm-rpi-pico/cmake/bin/cmake.exe -E env VERBOSE=1 C:/mingw/MinGW/bin/mingw32-make.exe -f Makefile cmTC_329d7/fast]
-        ignore line: [C:/mingw/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_329d7.dir\\build.make CMakeFiles/cmTC_329d7.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-szxagd']
-        ignore line: [Building C object CMakeFiles/cmTC_329d7.dir/CMakeCCompilerABI.c.obj]
-        ignore line: ["D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-gcc.exe"   -mcpu=cortex-m0plus -mthumb    -v -o CMakeFiles\\cmTC_329d7.dir\\CMakeCCompilerABI.c.obj -c D:\\Tools\\vsarm-rpi-pico\\cmake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): D:/Tools/vsarm-rpi-pico/cmake/bin/cmake.exe -E env VERBOSE=1 C:/mingw/MinGW/bin/mingw32-make.exe -f Makefile cmTC_0a23e/fast]
+        ignore line: [C:/mingw/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_0a23e.dir\\build.make CMakeFiles/cmTC_0a23e.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-x131i8']
+        ignore line: [Building C object CMakeFiles/cmTC_0a23e.dir/CMakeCCompilerABI.c.obj]
+        ignore line: ["D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-gcc.exe"   -mcpu=cortex-m0plus -mthumb    -v -o CMakeFiles\\cmTC_0a23e.dir\\CMakeCCompilerABI.c.obj -c D:\\Tools\\vsarm-rpi-pico\\cmake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-gcc.exe]
         ignore line: [Target: arm-none-eabi]
@@ -218,8 +231,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_329d7.dir\\CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m']
-        ignore line: [ d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -imultilib thumb/v6-m/nofp -iprefix d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../arm-none-eabi -D__USES_INITFINI__ D:\\Tools\\vsarm-rpi-pico\\cmake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -auxbase-strip CMakeFiles\\cmTC_329d7.dir\\CMakeCCompilerABI.c.obj -version -o C:\\Users\\aprilito\\AppData\\Local\\Temp\\cckPLOvS.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_0a23e.dir\\CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m']
+        ignore line: [ d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -imultilib thumb/v6-m/nofp -iprefix d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../arm-none-eabi -D__USES_INITFINI__ D:\\Tools\\vsarm-rpi-pico\\cmake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -auxbase-strip CMakeFiles\\cmTC_0a23e.dir\\CMakeCCompilerABI.c.obj -version -o C:\\Users\\aprilito\\AppData\\Local\\Temp\\ccBgLXjP.s]
         ignore line: [GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)]
         ignore line: [	compiled by GNU C version 7.3-win32 20180312  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
         ignore line: []
@@ -240,8 +253,8 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: f3937ce18b4177bfd408ca565336596a]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_329d7.dir\\CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m']
-        ignore line: [ d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_329d7.dir\\CMakeCCompilerABI.c.obj C:\\Users\\aprilito\\AppData\\Local\\Temp\\cckPLOvS.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_0a23e.dir\\CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m']
+        ignore line: [ d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_0a23e.dir\\CMakeCCompilerABI.c.obj C:\\Users\\aprilito\\AppData\\Local\\Temp\\ccBgLXjP.s]
         ignore line: [GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621]
         ignore line: [COMPILER_PATH=d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/]
         ignore line: [d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/]
@@ -253,10 +266,10 @@ events:
         ignore line: [d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/]
         ignore line: [d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/]
         ignore line: [d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_329d7.dir\\CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m']
-        ignore line: [Linking C executable cmTC_329d7.elf]
-        ignore line: [D:\\Tools\\vsarm-rpi-pico\\cmake\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_329d7.dir\\link.txt --verbose=1]
-        ignore line: ["D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-gcc.exe" -mcpu=cortex-m0plus -mthumb  -Wl --build-id=none -nostdlib  -v CMakeFiles/cmTC_329d7.dir/CMakeCCompilerABI.c.obj -o cmTC_329d7.elf ]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_0a23e.dir\\CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m']
+        ignore line: [Linking C executable cmTC_0a23e.elf]
+        ignore line: [D:\\Tools\\vsarm-rpi-pico\\cmake\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_0a23e.dir\\link.txt --verbose=1]
+        ignore line: ["D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-gcc.exe" -mcpu=cortex-m0plus -mthumb  -Wl --build-id=none -nostdlib  -v CMakeFiles/cmTC_0a23e.dir/CMakeCCompilerABI.c.obj -o cmTC_0a23e.elf ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-gcc.exe]
         ignore line: [COLLECT_LTO_WRAPPER=d:/tools/vsarm-rpi-pico/toolchain/10\\ 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe]
@@ -275,12 +288,12 @@ events:
         ignore line: [d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/]
         ignore line: [d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/]
         ignore line: [d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_329d7.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m']
-        ignore line: [ d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\aprilito\\AppData\\Local\\Temp\\ccmq2IeZ.res --sysroot=d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../arm-none-eabi -X -o cmTC_329d7.elf -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1 -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_329d7.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_0a23e.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m']
+        ignore line: [ d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\aprilito\\AppData\\Local\\Temp\\ccP7nxdX.res --sysroot=d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../arm-none-eabi -X -o cmTC_0a23e.elf -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1 -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_0a23e.dir/CMakeCCompilerABI.c.obj]
         ignore line: [d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: cannot find entry symbol _start]
         ignore line: [ defaulting to 00008000]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_329d7.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m']
-        ignore line: [mingw32-make[1]: Leaving directory 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-szxagd']
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_0a23e.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m']
+        ignore line: [mingw32-make[1]: Leaving directory 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-x131i8']
         ignore line: []
         ignore line: []
         implicit libs: []
@@ -294,12 +307,12 @@ events:
     backtrace:
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "D:/Tools/FreeRTOS-KernelV11.0.1/portable/ThirdParty/GCC/RP2040/CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:12 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-o1wiqe"
-      binary: "D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-o1wiqe"
+      source: "D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-4rb7z8"
+      binary: "D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-4rb7z8"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-mcpu=cortex-m0plus -mthumb"
       CMAKE_CXX_FLAGS_DEBUG: "-Og -g"
@@ -309,13 +322,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-o1wiqe'
+        Change Dir: 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-4rb7z8'
         
-        Run Build Command(s): D:/Tools/vsarm-rpi-pico/cmake/bin/cmake.exe -E env VERBOSE=1 C:/mingw/MinGW/bin/mingw32-make.exe -f Makefile cmTC_dfad3/fast
-        C:/mingw/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_dfad3.dir\\build.make CMakeFiles/cmTC_dfad3.dir/build
-        mingw32-make[1]: Entering directory 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-o1wiqe'
-        Building CXX object CMakeFiles/cmTC_dfad3.dir/CMakeCXXCompilerABI.cpp.obj
-        "D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-g++.exe"   -mcpu=cortex-m0plus -mthumb    -v -o CMakeFiles\\cmTC_dfad3.dir\\CMakeCXXCompilerABI.cpp.obj -c D:\\Tools\\vsarm-rpi-pico\\cmake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp
+        Run Build Command(s): D:/Tools/vsarm-rpi-pico/cmake/bin/cmake.exe -E env VERBOSE=1 C:/mingw/MinGW/bin/mingw32-make.exe -f Makefile cmTC_78636/fast
+        C:/mingw/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_78636.dir\\build.make CMakeFiles/cmTC_78636.dir/build
+        mingw32-make[1]: Entering directory 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-4rb7z8'
+        Building CXX object CMakeFiles/cmTC_78636.dir/CMakeCXXCompilerABI.cpp.obj
+        "D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-g++.exe"   -mcpu=cortex-m0plus -mthumb    -v -o CMakeFiles\\cmTC_78636.dir\\CMakeCXXCompilerABI.cpp.obj -c D:\\Tools\\vsarm-rpi-pico\\cmake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-g++.exe
         Target: arm-none-eabi
@@ -323,8 +336,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_dfad3.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m'
-         d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1plus.exe -quiet -v -imultilib thumb/v6-m/nofp -iprefix d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../arm-none-eabi -D__USES_INITFINI__ D:\\Tools\\vsarm-rpi-pico\\cmake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -auxbase-strip CMakeFiles\\cmTC_dfad3.dir\\CMakeCXXCompilerABI.cpp.obj -version -o C:\\Users\\aprilito\\AppData\\Local\\Temp\\cc1Exrfd.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_78636.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m'
+         d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1plus.exe -quiet -v -imultilib thumb/v6-m/nofp -iprefix d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../arm-none-eabi -D__USES_INITFINI__ D:\\Tools\\vsarm-rpi-pico\\cmake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -auxbase-strip CMakeFiles\\cmTC_78636.dir\\CMakeCXXCompilerABI.cpp.obj -version -o C:\\Users\\aprilito\\AppData\\Local\\Temp\\ccE1KJGd.s
         GNU C++14 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
         	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
         
@@ -351,15 +364,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: f8787892a7c5aa84cea58dce52be7118
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_dfad3.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m'
-         d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_dfad3.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\aprilito\\AppData\\Local\\Temp\\cc1Exrfd.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_78636.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m'
+         d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_78636.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\aprilito\\AppData\\Local\\Temp\\ccE1KJGd.s
         GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
         COMPILER_PATH=d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib/thumb/v6-m/nofp/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_dfad3.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m'
-        Linking CXX executable cmTC_dfad3.elf
-        D:\\Tools\\vsarm-rpi-pico\\cmake\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_dfad3.dir\\link.txt --verbose=1
-        "D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-g++.exe" -mcpu=cortex-m0plus -mthumb  -Wl,--build-id=none -nostdlib  -v CMakeFiles/cmTC_dfad3.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_dfad3.elf 
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_78636.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m'
+        Linking CXX executable cmTC_78636.elf
+        D:\\Tools\\vsarm-rpi-pico\\cmake\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_78636.dir\\link.txt --verbose=1
+        "D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-g++.exe" -mcpu=cortex-m0plus -mthumb  -Wl,--build-id=none -nostdlib  -v CMakeFiles/cmTC_78636.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_78636.elf 
         Using built-in specs.
         COLLECT_GCC=D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-g++.exe
         COLLECT_LTO_WRAPPER=d:/tools/vsarm-rpi-pico/toolchain/10\\ 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe
@@ -370,11 +383,11 @@ events:
         gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
         COMPILER_PATH=d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib/thumb/v6-m/nofp/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_dfad3.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m'
-         d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\aprilito\\AppData\\Local\\Temp\\ccpxbqgk.res --sysroot=d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../arm-none-eabi -X -o cmTC_dfad3.elf -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1 -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_dfad3.dir/CMakeCXXCompilerABI.cpp.obj
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_78636.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m'
+         d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\aprilito\\AppData\\Local\\Temp\\ccI3erZk.res --sysroot=d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../arm-none-eabi -X -o cmTC_78636.elf -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1 -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_78636.dir/CMakeCXXCompilerABI.cpp.obj
         d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00008000
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_dfad3.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m'
-        mingw32-make[1]: Leaving directory 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-o1wiqe'
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_78636.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m'
+        mingw32-make[1]: Leaving directory 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-4rb7z8'
         
       exitCode: 0
   -
@@ -382,7 +395,7 @@ events:
     backtrace:
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "D:/Tools/FreeRTOS-KernelV11.0.1/portable/ThirdParty/GCC/RP2040/CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:12 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
         found start of include info
@@ -408,17 +421,17 @@ events:
     backtrace:
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
       - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "D:/Tools/FreeRTOS-KernelV11.0.1/portable/ThirdParty/GCC/RP2040/CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:12 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(arm-none-eabi-ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-o1wiqe']
+        ignore line: [Change Dir: 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-4rb7z8']
         ignore line: []
-        ignore line: [Run Build Command(s): D:/Tools/vsarm-rpi-pico/cmake/bin/cmake.exe -E env VERBOSE=1 C:/mingw/MinGW/bin/mingw32-make.exe -f Makefile cmTC_dfad3/fast]
-        ignore line: [C:/mingw/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_dfad3.dir\\build.make CMakeFiles/cmTC_dfad3.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-o1wiqe']
-        ignore line: [Building CXX object CMakeFiles/cmTC_dfad3.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: ["D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-g++.exe"   -mcpu=cortex-m0plus -mthumb    -v -o CMakeFiles\\cmTC_dfad3.dir\\CMakeCXXCompilerABI.cpp.obj -c D:\\Tools\\vsarm-rpi-pico\\cmake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): D:/Tools/vsarm-rpi-pico/cmake/bin/cmake.exe -E env VERBOSE=1 C:/mingw/MinGW/bin/mingw32-make.exe -f Makefile cmTC_78636/fast]
+        ignore line: [C:/mingw/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_78636.dir\\build.make CMakeFiles/cmTC_78636.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-4rb7z8']
+        ignore line: [Building CXX object CMakeFiles/cmTC_78636.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: ["D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-g++.exe"   -mcpu=cortex-m0plus -mthumb    -v -o CMakeFiles\\cmTC_78636.dir\\CMakeCXXCompilerABI.cpp.obj -c D:\\Tools\\vsarm-rpi-pico\\cmake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-g++.exe]
         ignore line: [Target: arm-none-eabi]
@@ -426,8 +439,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_dfad3.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m']
-        ignore line: [ d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1plus.exe -quiet -v -imultilib thumb/v6-m/nofp -iprefix d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../arm-none-eabi -D__USES_INITFINI__ D:\\Tools\\vsarm-rpi-pico\\cmake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -auxbase-strip CMakeFiles\\cmTC_dfad3.dir\\CMakeCXXCompilerABI.cpp.obj -version -o C:\\Users\\aprilito\\AppData\\Local\\Temp\\cc1Exrfd.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_78636.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m']
+        ignore line: [ d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1plus.exe -quiet -v -imultilib thumb/v6-m/nofp -iprefix d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../arm-none-eabi -D__USES_INITFINI__ D:\\Tools\\vsarm-rpi-pico\\cmake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -mlibarch=armv6s-m -march=armv6s-m -auxbase-strip CMakeFiles\\cmTC_78636.dir\\CMakeCXXCompilerABI.cpp.obj -version -o C:\\Users\\aprilito\\AppData\\Local\\Temp\\ccE1KJGd.s]
         ignore line: [GNU C++14 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)]
         ignore line: [	compiled by GNU C version 7.3-win32 20180312  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
         ignore line: []
@@ -454,8 +467,8 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: f8787892a7c5aa84cea58dce52be7118]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_dfad3.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m']
-        ignore line: [ d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_dfad3.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\aprilito\\AppData\\Local\\Temp\\cc1Exrfd.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_78636.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m']
+        ignore line: [ d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv6s-m -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_78636.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\aprilito\\AppData\\Local\\Temp\\ccE1KJGd.s]
         ignore line: [GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621]
         ignore line: [COMPILER_PATH=d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/]
         ignore line: [d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/]
@@ -467,10 +480,10 @@ events:
         ignore line: [d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/]
         ignore line: [d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/]
         ignore line: [d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_dfad3.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m']
-        ignore line: [Linking CXX executable cmTC_dfad3.elf]
-        ignore line: [D:\\Tools\\vsarm-rpi-pico\\cmake\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_dfad3.dir\\link.txt --verbose=1]
-        ignore line: ["D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-g++.exe" -mcpu=cortex-m0plus -mthumb  -Wl --build-id=none -nostdlib  -v CMakeFiles/cmTC_dfad3.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_dfad3.elf ]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-v' '-o' 'CMakeFiles\\cmTC_78636.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m']
+        ignore line: [Linking CXX executable cmTC_78636.elf]
+        ignore line: [D:\\Tools\\vsarm-rpi-pico\\cmake\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_78636.dir\\link.txt --verbose=1]
+        ignore line: ["D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-g++.exe" -mcpu=cortex-m0plus -mthumb  -Wl --build-id=none -nostdlib  -v CMakeFiles/cmTC_78636.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_78636.elf ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-g++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=d:/tools/vsarm-rpi-pico/toolchain/10\\ 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe]
@@ -489,12 +502,12 @@ events:
         ignore line: [d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/]
         ignore line: [d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/]
         ignore line: [d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_dfad3.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m']
-        ignore line: [ d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\aprilito\\AppData\\Local\\Temp\\ccpxbqgk.res --sysroot=d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../arm-none-eabi -X -o cmTC_dfad3.elf -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1 -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_dfad3.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_78636.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m']
+        ignore line: [ d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\aprilito\\AppData\\Local\\Temp\\ccI3erZk.res --sysroot=d:\\tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\../arm-none-eabi -X -o cmTC_78636.elf -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1 -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Ld:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_78636.dir/CMakeCXXCompilerABI.cpp.obj]
         ignore line: [d:/tools/vsarm-rpi-pico/toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: cannot find entry symbol _start]
         ignore line: [ defaulting to 00008000]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_dfad3.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m']
-        ignore line: [mingw32-make[1]: Leaving directory 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-o1wiqe']
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m0plus' '-mthumb' '-nostdlib' '-v' '-o' 'cmTC_78636.elf' '-mfloat-abi=soft' '-mlibarch=armv6s-m' '-march=armv6s-m']
+        ignore line: [mingw32-make[1]: Leaving directory 'D:/tugas/Github/raspi-pico-freertos/build/CMakeFiles/CMakeScratch/TryCompile-4rb7z8']
         ignore line: []
         ignore line: []
         implicit libs: []
@@ -502,18 +515,5 @@ events:
         implicit dirs: []
         implicit fwks: []
       
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1131 (message)"
-      - "D:/Tools/vsarm-rpi-pico/cmake/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "CMakeLists.txt:16 (project)"
-    message: |
-      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
-      arm-none-eabi-gcc.exe (GNU Arm Embedded Toolchain 10.3-2021.10) 10.3.1 20210824 (release)
-      Copyright (C) 2020 Free Software Foundation, Inc.
-      This is free software; see the source for copying conditions.  There is NO
-      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
       
 ...
