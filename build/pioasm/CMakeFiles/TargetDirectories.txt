@@ -1,0 +1,3 @@
+D:/tugas/Github/raspi-pico-freertos/build/pioasm/CMakeFiles/pioasm.dir
+D:/tugas/Github/raspi-pico-freertos/build/pioasm/CMakeFiles/edit_cache.dir
+D:/tugas/Github/raspi-pico-freertos/build/pioasm/CMakeFiles/rebuild_cache.dir
