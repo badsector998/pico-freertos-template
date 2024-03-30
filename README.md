@@ -6,4 +6,5 @@
 ## Commmon Problems
 - Always check header files points to correct library location. If not set Correctly check root `CMakeLists.txt`
 - Always check compiler and make sure it uses `arm-none-eabi-gcc`
-- Always check for environment variables that points between `${PICO_SDK_PATH}` or `${FREERTOS_KERNEL_PATH`
+- ~Always check for environment variables that points between `${PICO_SDK_PATH}` or `${FREERTOS_KERNEL_PATH`~ 
+Due to problematic ENV management, the FreeRTOS comes within lib set as submodule
