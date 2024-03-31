@@ -1,6 +1,3 @@
 [submodule "lib/FreeRTOS-Kernel"]
 	path = lib/FreeRTOS-Kernel
 	url = https://github.com/FreeRTOS/FreeRTOS-Kernel.git
-[submodule "lib/--recursive"]
-	path = lib/--recursive
-	url = https://github.com/FreeRTOS/FreeRTOS-Kernel.git
